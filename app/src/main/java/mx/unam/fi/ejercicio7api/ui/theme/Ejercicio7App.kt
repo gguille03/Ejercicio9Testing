@@ -51,6 +51,7 @@ fun Ejercicio7App(){
 @Composable
 fun Ejercicio7TopBar(scrollBehavior: TopAppBarScrollBehavior, modifier:Modifier = Modifier){
     CenterAlignedTopAppBar(
+        scrollBehavior=scrollBehavior,
         title = {
             Row (
                 modifier = Modifier.padding(16.dp),
