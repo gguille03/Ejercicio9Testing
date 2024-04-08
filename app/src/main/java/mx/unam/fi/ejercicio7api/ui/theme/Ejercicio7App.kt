@@ -6,7 +6,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.material3.Button
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
@@ -40,7 +39,7 @@ fun Ejercicio7App(){
         Surface(
             modifier = Modifier.fillMaxSize()) {
 
-            val ejercicio7ViewModel: Ejercicio7ViewModel = viewModel()
+            val ejercicio7ViewModel: Ejercicio7ViewModel = viewModel(factory = Ejercicio7ViewModel.Factory)
             HomeScreen(ejercicio7UiState = ejercicio7ViewModel.ejercicio7UiState, contentPadding = it)
 
         }
